@@ -29,8 +29,8 @@ echo "/var/lib/mesos" > /etc/mesos-master/work_dir
 
 # Mesos DNS
 mkdir -p /usr/local/mesos-dns/
-mv /vagrant/mesos-dns-config.json /usr/local/mesos-dns/config.json
-mv /vagrant/mesos-dns-marathon.json /usr/local/mesos-dns/marathon.json
+cp /vagrant/mesos-dns-config.json /usr/local/mesos-dns/config.json
+cp /vagrant/mesos-dns-marathon.json /usr/local/mesos-dns/marathon.json
 wget https://github.com/mesosphere/mesos-dns/releases/download/v0.5.1/mesos-dns-v0.5.1-linux-amd64
 mv mesos-dns-v0.5.1-linux-amd64 /usr/local/mesos-dns/mesos-dns
 chmod 755 /usr/local/mesos-dns/mesos-dns
