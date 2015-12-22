@@ -19,7 +19,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
   config.vm.box = "ubuntu/trusty64"
   config.vm.provider :virtualbox do |vb, override|
-    vb.customize ["modifyvm", :id, "--memory", 12000,  "--cpus", "6"]
+    vb.customize ["modifyvm", :id, "--memory", 8000,  "--cpus", "4"]
     override.vm.network :forwarded_port, guest: 5050, host: 5050
     override.vm.network :forwarded_port, guest: 5051, host: 5051
     override.vm.network :forwarded_port, guest: 8080, host: 8080
