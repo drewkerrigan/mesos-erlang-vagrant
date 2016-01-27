@@ -23,6 +23,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     override.vm.network :forwarded_port, guest: 5050, host: 5050
     override.vm.network :forwarded_port, guest: 5051, host: 5051
     override.vm.network :forwarded_port, guest: 8080, host: 8080
+    override.vm.network :forwarded_port, guest: 2181, host: 2181
   end
   config.vm.provision 'shell', path: 'provision.sh', run: 'once'
 end
