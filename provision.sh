@@ -50,7 +50,7 @@ apt-get -y install git s3cmd zip python-pip
 # Install Erlang
 apt-get -y update
 apt-get -y upgrade
-apt-get install -y build-essential autoconf libncurses5-dev openssl libssl-dev fop xsltproc unixodbc-dev libpam0g-dev
+apt-get install -y build-essential autoconf libncurses5-dev openssl libssl-dev fop xsltproc unixodbc-dev libpam0g-dev maven
 cd $HOME/bin
 curl -O https://raw.githubusercontent.com/spawngrid/kerl/master/kerl
 chmod a+x kerl
