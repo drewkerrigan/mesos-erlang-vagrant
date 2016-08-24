@@ -7,7 +7,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     node.vm.hostname = 'ubuntu.local'
     node.vm.network :private_network, ip: '192.168.42.42'
   end
-  config.vm.synced_folder "shared/", "/opt/shared"
+  config.vm.synced_folder "../../shared/", "/opt/shared"
   config.vm.box = "ubuntu/xenial64"
   config.vm.provider :virtualbox do |vb, override|
     vb.customize ["modifyvm", :id, "--memory", 8000,  "--cpus", "4"]

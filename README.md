@@ -7,8 +7,7 @@ Bring up the VM and install Mesos, Erlang, Marathon, Zookeeper, and Mesos-DNS
 
 ```
 git clone https://github.com/drewkerrigan/mesos-erlang-vagrant.git
-cd mesos-erlang-vagrant
-vagrant plugin install vagrant-hostmanager
+cd mesos-erlang-vagrant/ubuntu/xenial
 vagrant up
 ```
 
