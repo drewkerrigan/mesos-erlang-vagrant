@@ -116,7 +116,9 @@ chown -R ubuntu:ubuntu $HOME
 
 # Marathon
 cd $HOME/bin
-curl -O http://downloads.mesosphere.com/marathon/v1.1.1/marathon-1.1.1.tgz
+curl -O http://downloads.mesosphere.io/marathon/v1.3.0-RC4/marathon-1.3.0-RC4.tgz
+tar xvfz marathon-1.3.0-RC4.tgz
+
 tar xzf marathon-1.1.1.tgz
 #service marathon restart
 
